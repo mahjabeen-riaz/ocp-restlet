@@ -70,6 +70,14 @@
       <id>jboss-early-access-repository</id>
       <url>https://repository.jboss.org/nexus/content/groups/ea</url>
     </repository>
+    
+    <!-- new repository -->
+    <repository>
+    	<id>maven-restlet</id>
+    	<name>Restlet repository</name>
+    	<url>https://maven.restlet.talend.com</url>
+ 	 </repository>
+ 	 
   </repositories>
   <pluginRepositories>
     <pluginRepository>
@@ -84,6 +92,21 @@
       <id>jboss-early-access-repository</id>
       <url>https://repository.jboss.org/nexus/content/groups/ea</url>
     </pluginRepository>
+    
+    <!-- new plugin repo -->
+    <pluginRepository>
+      <releases>
+        <enabled>true</enabled>
+        <updatePolicy>never</updatePolicy>
+      </releases>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+      <id>fuse-public-repository</id>
+      <name>FuseSource Community Release Repository</name>
+      <url>https://repo.fusesource.com/nexus/content/groups/public</url>
+    </pluginRepository>
+    
   </pluginRepositories>
   <build>
     <defaultGoal>spring-boot:run</defaultGoal>
